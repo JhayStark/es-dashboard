@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {},
       fontFamily: {
-        sans: ["var(--font-roboto)"],
+        sans: ["var(--font-poppins)"],
       },
       screens: {
         xl: "1360px",
@@ -17,7 +17,7 @@ module.exports = {
         "3xl": "1920px",
       },
       boxShadow: {
-        "3xl": "0px 4px 23px rgba(112, 112, 112, 0.25)",
+        "3xl": "0px 4px 23px rgba(112, 112, 112, 0.1)",
       },
     },
   },

@@ -47,7 +47,9 @@ export default function Home() {
           </div>
         </div>
         <div className="p-4 bg-white rounded-lg shadow-3xl ">
-          <p className="py-3 border-b-[1px] mb-6">Recent Payments</p>
+          <p className="py-3 border-b-[1px] mb-6 xl:text-[1.030rem] 2xl:text-[1.174rem] 3xl:text-[1.493rem] font-medium">
+            Recent Payments
+          </p>
           <div className="grid grid-cols-6 mb-2 gap-7">
             <p className="text-lg font-medium text-center ">Transaction ID</p>
             <p className="text-lg font-medium text-center "> Client Name</p>

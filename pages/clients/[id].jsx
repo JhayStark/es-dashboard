@@ -28,7 +28,7 @@ const UserDetails = () => {
 
               <p
                 className={`text-center text-2xl font-medium rounded-lg py-2 cursor-pointer ${
-                  tab === "push" && "bg-[#3D7DAD] text-white"
+                  tab === "push" && "bg-[#F24E1E] text-white"
                 }`}
                 onClick={() => setTab("push")}
               >
@@ -81,7 +81,11 @@ const UserDetails = () => {
         </div>
       </div>
       <div className="w-full bg-white rounded-lg shadow-3xl mt-14 h-[30rem]">
-        <p className="text-[#2E64C9] font-medium text-3xl p-4 pb-4 border-b-[1px]">
+        <p
+          className={` font-medium text-3xl p-4 pb-4 border-b-[1px] ${
+            tab === "insyt" ? "text-[#2E64C9]" : "text-[#F24E1E]"
+          }`}
+        >
           {tab === "insyt" ? "Insyt Forms" : "Push Forms"}
         </p>
         <div className="px-4">

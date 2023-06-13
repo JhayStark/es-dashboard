@@ -1,17 +1,17 @@
 import "@/styles/globals.css";
-import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Layout from "@/components/Layout";
 
-const roboto = Roboto({
+const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-roboto",
+  variable: "--font-poppins",
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${roboto.variable}`}>
+    <main className={`${poppins.variable}`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

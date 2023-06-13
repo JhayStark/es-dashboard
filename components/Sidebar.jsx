@@ -10,22 +10,22 @@ const menuItems = [
   {
     name: "Dashboard",
     link: "/",
-    icon: <RiHome5Line className="text-3xl" />,
+    icon: <RiHome5Line />,
   },
   {
     name: "Clients",
     link: "clients",
-    icon: <FaRegUser className="text-3xl" />,
+    icon: <FaRegUser />,
   },
   {
     name: "Reports",
     link: "reports",
-    icon: <TbReportSearch className="text-3xl" />,
+    icon: <TbReportSearch />,
   },
   {
     name: "Settings",
     link: "settings",
-    icon: <FiSettings className="text-3xl" />,
+    icon: <FiSettings />,
   },
 ];
 
@@ -34,7 +34,7 @@ const Sidebar = () => {
   return (
     <div className="h-full  xl:w-72 2xl:w-80 3xl:w-96 bg-[#073150] flex justify-center py-5">
       <aside className="flex flex-col items-center w-full ">
-        <img src="/images/logo.png" />
+        <img src="/images/logo.png" className="w-36" />
         <div className="w-full mt-10">
           {menuItems.map((item, index) => (
             <Link href={item.link} key={index}>
@@ -47,8 +47,8 @@ const Sidebar = () => {
                 }`}
               >
                 <div className="flex flex-row items-center justify-start gap-4  xl:w-[9.33rem]">
-                  {item.icon}
-                  <p className="xl:text-[1.030rem]  2xl:text-[1.174rem] 3xl:text-[1.493rem] font-medium ">
+                  <div className="text-3xl">{item.icon}</div>
+                  <p className="xl:text-[1.030rem]  2xl:text-[1.174rem]  font-medium ">
                     {item.name}
                   </p>
                 </div>

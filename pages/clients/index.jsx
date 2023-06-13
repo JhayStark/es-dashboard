@@ -1,9 +1,11 @@
 import { FaUsers, FaUserSlash } from "react-icons/fa";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { RiUserShared2Line } from "react-icons/ri";
+import { useRouter } from "next/router";
 import PieChartComponent from "@/components/PieChart";
 
 const Clients = () => {
+  const router = useRouter();
   return (
     <>
       <div className="grid grid-cols-3 gap-[1.4rem] mb-14 ">
@@ -47,8 +49,10 @@ const Clients = () => {
         </div>
       </div>
       <div className="grid grid-cols-3 gap-[1.4rem] mb-14 ">
-        <div className="p-4 bg-white rounded-lg shadow-3xl max-h-[25rem]">
-          <p className="text-xl font-bold">User Service Usage</p>
+        <div className="p-4 bg-white rounded-lg shadow-3xl max-h-[25rem] 3xl:px-7">
+          <p className="xl:text-[1.030rem] 2xl:text-[1.174rem] 3xl:text-[1.493rem]  font-semibold">
+            User Service Usage
+          </p>
 
           <PieChartComponent />
 
@@ -85,7 +89,7 @@ const Clients = () => {
                 <p className="text-lg text-center">CID 245</p>
                 <p className="text-lg text-center">Jay Inc</p>
                 <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
-                  <RiUserShared2Line />
+                  <RiUserShared2Line onClick={() => router.push("clients/1")} />
                 </div>
               </div>
               <div className="grid grid-cols-3 gap-2 py-4 ">
