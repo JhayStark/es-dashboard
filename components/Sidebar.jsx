@@ -14,17 +14,17 @@ const menuItems = [
   },
   {
     name: "Clients",
-    link: "clients",
+    link: "/clients",
     icon: <FaRegUser />,
   },
   {
     name: "Reports",
-    link: "reports",
+    link: "/reports",
     icon: <TbReportSearch />,
   },
   {
     name: "Settings",
-    link: "settings",
+    link: "/settings",
     icon: <FiSettings />,
   },
 ];
@@ -36,26 +36,25 @@ const Sidebar = () => {
       <aside className="flex flex-col items-center w-full ">
         <img src="/images/logo.png" className="w-36" />
         <div className="w-full mt-10">
-          {menuItems.map((item, index) => (
-            <Link href={item.link} key={index}>
-              <div
-                className={`flex flex-row items-center  py-6 justify-center cursor-pointer ${
-                  router.pathname === item.link ||
-                  router.pathname.includes("/" + item.link)
-                    ? "bg-[#EDF3FF] text-[#055189]"
-                    : "text-white"
-                }`}
-              >
-                <div className="flex flex-row items-center justify-start gap-4  xl:w-[9.33rem]">
-                  <div className="text-3xl">{item.icon}</div>
-                  <p className="xl:text-[1.030rem]  2xl:text-[1.174rem]  font-medium ">
-                    {item.name}
-                  </p>
+          <Link href="/">
+            <div
+              className={`flex flex-row items-center  py-6 justify-center cursor-pointer ${
+                router.pathname === "/"
+                  ? "bg-[#EDF3FF] text-[#055189]"
+                  : "text-white"
+              }`}
+            >
+              <div className="flex flex-row items-center justify-start gap-4  xl:w-[9.33rem]">
+                <div className="text-3xl">
+                  <RiHome5Line />
                 </div>
+                <p className="xl:text-[1.030rem]  2xl:text-[1.174rem]  font-medium ">
+                  Dashboard
+                </p>
               </div>
-            </Link>
-          ))}
-          {/* <Link href={"/clients"}>
+            </div>
+          </Link>
+          <Link href="/clients">
             <div
               className={`flex flex-row items-center  py-6 justify-center cursor-pointer ${
                 router.pathname.includes("/clients")
@@ -63,14 +62,52 @@ const Sidebar = () => {
                   : "text-white"
               }`}
             >
-              <div className="flex flex-row items-center justify-start gap-4 xl:w-[9.33rem]">
-                <FaRegUser className="text-3xl" />
-                <p className="xl:text-[1.030rem]  2xl:text-[1.174rem] 3xl:text-[1.493rem] font-medium ">
+              <div className="flex flex-row items-center justify-start gap-4  xl:w-[9.33rem]">
+                <div className="text-3xl">
+                  <FaRegUser />
+                </div>
+                <p className="xl:text-[1.030rem]  2xl:text-[1.174rem]  font-medium ">
                   Clients
                 </p>
               </div>
             </div>
-          </Link> */}
+          </Link>
+          <Link href="/reports">
+            <div
+              className={`flex flex-row items-center  py-6 justify-center cursor-pointer ${
+                router.pathname.includes("/reports")
+                  ? "bg-[#EDF3FF] text-[#055189]"
+                  : "text-white"
+              }`}
+            >
+              <div className="flex flex-row items-center justify-start gap-4  xl:w-[9.33rem]">
+                <div className="text-3xl">
+                  <TbReportSearch />
+                </div>
+                <p className="xl:text-[1.030rem]  2xl:text-[1.174rem]  font-medium ">
+                  Reports
+                </p>
+              </div>
+            </div>
+          </Link>
+          <Link href="/settings">
+            <div
+              className={`flex flex-row items-center  py-6 justify-center cursor-pointer ${
+                router.pathname.includes("/settings")
+                  ? "bg-[#EDF3FF] text-[#055189]"
+                  : "text-white"
+              }`}
+            >
+              <div className="flex flex-row items-center justify-start gap-4  xl:w-[9.33rem]">
+                <div className="text-3xl">
+                  <FiSettings />
+                </div>
+                <p className="xl:text-[1.030rem]  2xl:text-[1.174rem]  font-medium ">
+                  Settings
+                </p>
+              </div>
+            </div>
+          </Link>
         </div>
       </aside>
     </div>
