@@ -20,11 +20,11 @@ export const StatsTabOption1 = ({
       <div className="flex flex-row justify-between">
         <div>
           <p className="text-sm font-medium">Active</p>
-          <p className="text-[#0D7940]">{subValue}</p>
+          <p className="text-[#0D7940] font-semibold">{subValue}</p>
         </div>
         <div>
           <p className="text-sm font-medium">Inactive</p>
-          <p className="text-[#FF0000]">{subValue}</p>
+          <p className="text-[#FF0000] font-semibold">{subValue}</p>
         </div>
       </div>
     </div>
@@ -50,11 +50,11 @@ export const StatsTabOption2 = ({
       <div className="flex flex-row justify-between">
         <div>
           <p className="text-sm font-medium">Scheduled</p>
-          <p className="text-[#0D7940]">{subValue}</p>
+          <p className="text-[#0D7940] font-semibold">{subValue}</p>
         </div>
         <div>
           <p className="text-sm font-medium">Delivered</p>
-          <p className="text-[#FF0000]">{subValue}</p>
+          <p className="text-[#FF0000] font-semibold">{subValue}</p>
         </div>
       </div>
     </div>

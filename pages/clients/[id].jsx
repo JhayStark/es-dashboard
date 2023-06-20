@@ -82,22 +82,22 @@ const UserDetails = () => {
       </div>
       <div className="w-full bg-white rounded-lg shadow-3xl mt-14 h-[30rem]">
         <p
-          className={` font-medium text-3xl p-4 pb-4 border-b-[1px] ${
+          className={` font-medium text-3xl p-4 pb-4 border-b-[1px] pl-8 ${
             tab === "insyt" ? "text-[#2E64C9]" : "text-[#F24E1E]"
           }`}
         >
-          {tab === "insyt" ? "Insyt Forms" : "Push Forms"}
+          {tab === "insyt" ? "Insyt Forms" : "Push Messages"}
         </p>
         <div className="px-4">
           <div className="grid grid-cols-5 gap-10 py-4">
-            <p className="text-lg font-medium text-center">Date Created</p>
+            <p className="pl-5 text-lg font-medium text-left">Date Created</p>
             <p className="text-lg font-medium text-center">Campaign Name</p>
             <p className="text-lg font-medium text-center">Status</p>
             <p className="text-lg font-medium text-center">Responses</p>
             <p className="text-lg font-medium text-center">Action</p>
           </div>
           <div className="grid grid-cols-5 gap-10 py-4 bg-[#EDF3FF]">
-            <p className="text-lg text-center ">07/05/2023</p>
+            <p className="pl-5 text-lg text-left ">07/05/2023</p>
             <p className="text-lg text-center">Esoko Outreach</p>
             <p className="text-lg font-medium text-[#0D7940] text-center">
               Active
@@ -108,7 +108,7 @@ const UserDetails = () => {
             </div>
           </div>
           <div className="grid grid-cols-5 gap-10 py-4 ">
-            <p className="text-lg text-center ">07/05/2023</p>
+            <p className="pl-5 text-lg text-left ">07/05/2023</p>
             <p className="text-lg text-center">Esoko Outreach</p>
             <p className="text-lg font-medium text-[#0D7940] text-center">
               Active
@@ -119,7 +119,7 @@ const UserDetails = () => {
             </div>
           </div>
           <div className="grid grid-cols-5 gap-10 py-4 bg-[#EDF3FF]">
-            <p className="text-lg text-center ">07/05/2023</p>
+            <p className="pl-5 text-lg text-left ">07/05/2023</p>
             <p className="text-lg text-center">Esoko Outreach</p>
             <p className="text-lg font-medium text-[#FF0000] text-center">
               InActive

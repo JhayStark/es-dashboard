@@ -1,7 +1,10 @@
 import { RxAvatar } from "react-icons/rx";
 import { AiOutlineUser } from "react-icons/ai";
 import { RiKey2Line } from "react-icons/ri";
-import { MdOutlineNotificationsNone } from "react-icons/md";
+import {
+  MdOutlineNotificationsNone,
+  MdOutlineAdminPanelSettings,
+} from "react-icons/md";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -51,6 +54,18 @@ const SettingsLayout = ({ children }) => {
               >
                 <MdOutlineNotificationsNone className="text-lg" />
                 <p>Notifications</p>
+              </div>
+            </Link>
+            <Link href="/settings/admins">
+              <div
+                className={`flex flex-row items-center gap-3 w-44  cursor-pointer ${
+                  router.pathname === "/settings/admins"
+                    ? "text-[#055189]"
+                    : "text-[#747474]"
+                }`}
+              >
+                <MdOutlineAdminPanelSettings className="text-lg" />
+                <p>Administrators</p>
               </div>
             </Link>
           </div>

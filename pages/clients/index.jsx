@@ -1,6 +1,5 @@
 import { FaUsers, FaUserSlash } from "react-icons/fa";
-import { AiOutlineCheckCircle } from "react-icons/ai";
-import { RiUserShared2Line } from "react-icons/ri";
+import { AiOutlineCheckCircle, AiOutlineEye } from "react-icons/ai";
 import { useRouter } from "next/router";
 import PieChartComponent from "@/components/PieChart";
 
@@ -51,7 +50,7 @@ const Clients = () => {
       <div className="grid grid-cols-3 gap-[1.4rem] mb-14 ">
         <div className="p-4 bg-white rounded-lg shadow-3xl max-h-[25rem] 3xl:px-7">
           <p className="xl:text-[1.030rem] 2xl:text-[1.174rem] 3xl:text-[1.493rem]  font-semibold">
-            User Service Usage
+            Services Used
           </p>
 
           <PieChartComponent />
@@ -76,48 +75,82 @@ const Clients = () => {
         </div>
         <div className="col-span-2 min-h-[38rem] ">
           <div className="h-full p-4 bg-white rounded-lg shadow-3xl ">
-            <p className="py-3 border-b-[1px] text-xl font-medium">User List</p>
+            <p className="py-3 border-b-[1px] text-xl font-medium pl-5">
+              User List
+            </p>
             <div>
-              <div className="grid grid-cols-3 gap-2 py-4 ">
-                <p className="text-lg font-medium text-center ">Client ID</p>
-                <p className="text-lg font-medium text-center ">
-                  User/Organization Name
+              <div className="grid grid-cols-5 gap-2 py-4 ">
+                <p className="pl-5 text-lg font-medium text-left ">
+                  Joined Date
                 </p>
+                <p className="text-lg font-medium text-center ">
+                  Organization Name
+                </p>
+                <p className="text-lg font-medium text-center ">Sms Balance</p>
+                <p className="text-lg font-medium text-center ">Active Forms</p>
                 <p className="text-lg font-medium text-center ">Action</p>
               </div>
-              <div className="grid grid-cols-3 gap-2 py-4 bg-[#EDF3FF] ">
-                <p className="text-lg text-center">CID 245</p>
+              <div className="grid grid-cols-5 gap-2 py-4 bg-[#EDF3FF] ">
+                <p className="pl-5 text-lg text-left">24/08/2022</p>
                 <p className="text-lg text-center">Jay Inc</p>
+                <p className="text-lg text-center ">GHC. 5456.00</p>
+                <p className="text-lg text-center ">500</p>
                 <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
-                  <RiUserShared2Line onClick={() => router.push("clients/1")} />
+                  <AiOutlineEye onClick={() => router.push("clients/1")} />
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-2 py-4 ">
-                <p className="text-lg text-center">CID 245</p>
+              <div className="grid grid-cols-5 gap-2 py-4 ">
+                <p className="pl-5 text-lg text-left">24/08/2022</p>
                 <p className="text-lg text-center">Jay Inc</p>
+                <p className="text-lg text-center ">GHC. 5456.00</p>
+                <p className="text-lg text-center ">500</p>
                 <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
-                  <RiUserShared2Line />
+                  <AiOutlineEye onClick={() => router.push("clients/1")} />
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-2 py-4 bg-[#EDF3FF] ">
-                <p className="text-lg text-center">CID 245</p>
+              <div className="grid grid-cols-5 gap-2 py-4 bg-[#EDF3FF] ">
+                <p className="pl-5 text-lg text-left">24/08/2022</p>
                 <p className="text-lg text-center">Jay Inc</p>
+                <p className="text-lg text-center ">GHC. 5456.00</p>
+                <p className="text-lg text-center ">500</p>
                 <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
-                  <RiUserShared2Line />
+                  <AiOutlineEye onClick={() => router.push("clients/1")} />
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-2 py-4 ">
-                <p className="text-lg text-center">CID 245</p>
+              <div className="grid grid-cols-5 gap-2 py-4 ">
+                <p className="pl-5 text-lg text-left">24/08/2022</p>
                 <p className="text-lg text-center">Jay Inc</p>
+                <p className="text-lg text-center ">GHC. 5456.00</p>
+                <p className="text-lg text-center ">500</p>
                 <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
-                  <RiUserShared2Line />
+                  <AiOutlineEye onClick={() => router.push("clients/1")} />
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-2 py-4 bg-[#EDF3FF] ">
-                <p className="text-lg text-center">CID 245</p>
+              <div className="grid grid-cols-5 gap-2 py-4 bg-[#EDF3FF] ">
+                <p className="pl-5 text-lg text-left">24/08/2022</p>
                 <p className="text-lg text-center">Jay Inc</p>
+                <p className="text-lg text-center ">GHC. 5456.00</p>
+                <p className="text-lg text-center ">500</p>
                 <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
-                  <RiUserShared2Line />
+                  <AiOutlineEye onClick={() => router.push("clients/1")} />
+                </div>
+              </div>
+              <div className="grid grid-cols-5 gap-2 py-4 ">
+                <p className="pl-5 text-lg text-left">24/08/2022</p>
+                <p className="text-lg text-center">Jay Inc</p>
+                <p className="text-lg text-center ">GHC. 5456.00</p>
+                <p className="text-lg text-center ">500</p>
+                <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
+                  <AiOutlineEye onClick={() => router.push("clients/1")} />
+                </div>
+              </div>
+              <div className="grid grid-cols-5 gap-2 py-4 bg-[#EDF3FF] ">
+                <p className="pl-5 text-lg text-left">24/08/2022</p>
+                <p className="text-lg text-center">Jay Inc</p>
+                <p className="text-lg text-center ">GHC. 5456.00</p>
+                <p className="text-lg text-center ">500</p>
+                <div className="flex items-center justify-center text-[#699BF7] text-3xl hover:scale-125 cursor-pointer">
+                  <AiOutlineEye onClick={() => router.push("clients/1")} />
                 </div>
               </div>
             </div>

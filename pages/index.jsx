@@ -47,11 +47,13 @@ export default function Home() {
           </div>
         </div>
         <div className="p-4 bg-white rounded-lg shadow-3xl ">
-          <p className="py-3 border-b-[1px] mb-6 xl:text-[1.030rem] 2xl:text-[1.174rem] 3xl:text-[1.493rem] font-medium">
+          <p className="py-3 border-b-[1px] mb-6 xl:text-[1.030rem] 2xl:text-[1.174rem] 3xl:text-[1.493rem] font-medium pl-5">
             Recent Payments
           </p>
           <div className="grid grid-cols-6 mb-2 gap-7">
-            <p className="text-lg font-medium text-center ">Transaction ID</p>
+            <p className="pl-5 text-lg font-medium text-left ">
+              Transaction ID
+            </p>
             <p className="text-lg font-medium text-center "> Client Name</p>
             <p className="text-lg font-medium text-center ">Date</p>
             <p className="text-lg font-medium text-center ">Status</p>
@@ -60,7 +62,7 @@ export default function Home() {
           </div>
           <div className="overflow-y-auto h-[34rem]">
             <div className="grid grid-cols-6 py-6 gap-7 bg-[#EDF3FF]">
-              <p className="text-lg text-center">TID 245</p>
+              <p className="pl-5 text-lg text-left ">TID 245</p>
               <p className="text-lg text-center">Jay Inc</p>
               <p className="text-lg text-center">07/05/2023</p>
               <p className="text-lg text-center text-[#FF0000]">Failed</p>
@@ -68,23 +70,7 @@ export default function Home() {
               <p className="text-lg text-center">Push</p>
             </div>
             <div className="grid grid-cols-6 py-6 gap-7 ">
-              <p className="text-lg text-center">TID 245</p>
-              <p className="text-lg text-center">Jay Inc</p>
-              <p className="text-lg text-center">07/05/2023</p>
-              <p className="text-lg text-center text-[#FF0000]">Failed</p>
-              <p className="text-lg text-center">GHC 5000</p>
-              <p className="text-lg text-center">Push</p>
-            </div>
-            <div className="grid grid-cols-6 py-6 gap-7 bg-[#EDF3FF]">
-              <p className="text-lg text-center">TID 245</p>
-              <p className="text-lg text-center">Jay Inc</p>
-              <p className="text-lg text-center">07/05/2023</p>
-              <p className="text-lg text-center text-[#0FA958]">Completed</p>
-              <p className="text-lg text-center">GHC 5000</p>
-              <p className="text-lg text-center">Push</p>
-            </div>
-            <div className="grid grid-cols-6 py-6 gap-7 ">
-              <p className="text-lg text-center">TID 245</p>
+              <p className="pl-5 text-lg text-left">TID 245</p>
               <p className="text-lg text-center">Jay Inc</p>
               <p className="text-lg text-center">07/05/2023</p>
               <p className="text-lg text-center text-[#FF0000]">Failed</p>
@@ -92,7 +78,7 @@ export default function Home() {
               <p className="text-lg text-center">Push</p>
             </div>
             <div className="grid grid-cols-6 py-6 gap-7 bg-[#EDF3FF]">
-              <p className="text-lg text-center">TID 245</p>
+              <p className="pl-5 text-lg text-left">TID 245</p>
               <p className="text-lg text-center">Jay Inc</p>
               <p className="text-lg text-center">07/05/2023</p>
               <p className="text-lg text-center text-[#0FA958]">Completed</p>
@@ -100,7 +86,23 @@ export default function Home() {
               <p className="text-lg text-center">Push</p>
             </div>
             <div className="grid grid-cols-6 py-6 gap-7 ">
-              <p className="text-lg text-center">TID 245</p>
+              <p className="pl-5 text-lg text-left">TID 245</p>
+              <p className="text-lg text-center">Jay Inc</p>
+              <p className="text-lg text-center">07/05/2023</p>
+              <p className="text-lg text-center text-[#FF0000]">Failed</p>
+              <p className="text-lg text-center">GHC 5000</p>
+              <p className="text-lg text-center">Push</p>
+            </div>
+            <div className="grid grid-cols-6 py-6 gap-7 bg-[#EDF3FF]">
+              <p className="pl-5 text-lg text-left">TID 245</p>
+              <p className="text-lg text-center">Jay Inc</p>
+              <p className="text-lg text-center">07/05/2023</p>
+              <p className="text-lg text-center text-[#0FA958]">Completed</p>
+              <p className="text-lg text-center">GHC 5000</p>
+              <p className="text-lg text-center">Push</p>
+            </div>
+            <div className="grid grid-cols-6 py-6 gap-7 ">
+              <p className="pl-5 text-lg text-left">TID 245</p>
               <p className="text-lg text-center">Jay Inc</p>
               <p className="text-lg text-center">07/05/2023</p>
               <p className="text-lg text-center text-[#0FA958]">Completed</p>
