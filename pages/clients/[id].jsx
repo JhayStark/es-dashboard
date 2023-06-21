@@ -1,20 +1,73 @@
+import Modal from "@/components/Modal";
 import { useState } from "react";
 import { LuMoreVertical } from "react-icons/lu";
 
 const UserDetails = () => {
   const [tab, setTab] = useState("insyt");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
   return (
     <>
-      <div className="grid grid-cols-9  3xl:grid-cols-11 gap-[1.4rem] font-sans">
+      <div className="grid grid-cols-9  3xl:grid-cols-11 gap-[1.4rem] font-sans ">
         <div className="col-span-5 3xl:col-span-7">
           <div className="flex flex-col justify-between h-full ">
-            <div className="p-5 bg-white rounded-lg shadow-3xl max-h-40 3xl:max-h-44">
-              <p className="text-lg font-semibold 3xl:text-2xl mb-7">
-                ESOKO IT
-              </p>
-              <p className="text-sm font-medium mb-9 text-[#2A3547]">
-                Pawpaw Street, East Legon Ghana
-              </p>
+            <div className="p-5 bg-white rounded-lg shadow-3xl min-h-[75%] flex flex-col justify-between  ">
+              <div className="flex flex-row items-start justify-between">
+                <div className="flex flex-col justify-start">
+                  <div className="flex flex-row items-center gap-2">
+                    <div className="bg-[#D27C2C] px-2  rounded-lg">
+                      <p className="text-lg font-semibold text-white">E</p>
+                    </div>
+                    <p className="text-3xl font-semibold text-[#2A3547]">
+                      ESOKO
+                    </p>
+                  </div>
+                  <p className="text-[#828282] text-sm mt-3">
+                    Joined on 26th July 2021
+                  </p>
+                </div>
+                <div className="flex flex-col justify-end">
+                  <p className="font-medium  text-[#2A3547] ">
+                    Pawpaw Street, East legon Ghana
+                  </p>
+                  <p className="font-medium  text-[#2A3547] ">
+                    0201234567 / 0307894561
+                  </p>
+                  <p className="font-medium  text-[#2A3547] ">
+                    esoko@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-row items-center justify-between">
+                <p className="text-2xl 3xl:text-3xl font-medium text-[#1252A6]">
+                  54,895
+                  <span className="text-sm 3xl:text-base text-[#515050]">
+                    {" "}
+                    collaborators
+                  </span>
+                </p>
+                <p className="text-2xl 3xl:text-3xl font-medium text-[#F24E1E]">
+                  54,895
+                  <span className="text-sm 3xl:text-base text-[#515050]">
+                    {" "}
+                    data collected
+                  </span>
+                </p>
+                <p className="text-2xl 3xl:text-3xl font-medium text-[#00DBDB]">
+                  54,895
+                  <span className="text-sm 3xl:text-base text-[#515050]">
+                    {" "}
+                    campaigns
+                  </span>
+                </p>
+              </div>
             </div>
             <div className="bg-white grid grid-cols-2 rounded-lg shadow-3xl w-[50%]">
               <p
@@ -58,7 +111,10 @@ const UserDetails = () => {
         <div className="col-span-2 px-4 py-5 3xl:mx-3 bg-white rounded-lg shadow-3xl max-h-[20rem]">
           <div className="flex flex-row items-center justify-between w-full">
             <p className="text-3xl font-semibold text-[#F24E1E]">Push</p>
-            <button className="bg-[#F24E1E] text-sm font-medium shadow-md hover:scale-110 text-white rounded-lg p-1">
+            <button
+              className="bg-[#F24E1E] text-sm font-medium shadow-md hover:scale-110 text-white rounded-lg p-1"
+              onClick={openModal}
+            >
               Top-up
             </button>
           </div>
@@ -131,6 +187,7 @@ const UserDetails = () => {
           </div>
         </div>
       </div>
+      <Modal modalState={isOpen} close={closeModal} />
     </>
   );
 };
