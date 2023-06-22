@@ -23,6 +23,9 @@ const Modal = ({ modalState, close }) => {
           <div className="w-[30%] p-5 mx-auto bg-white rounded-lg shadow-lg">
             <h2 className="mb-4 text-lg font-bold">Top Up Balance</h2>
             <form onSubmit={handleSubmit}>
+              <select className="w-full px-4 py-2 mb-4 bg-white border-b-[1px]  focus:outline-none ">
+                <option value="cash">Cash</option>
+              </select>
               <input
                 type="number"
                 value={inputValue}
@@ -30,9 +33,6 @@ const Modal = ({ modalState, close }) => {
                 placeholder="Enter amount in cedis"
                 className="w-full px-4 py-2 mb-4 border-b-[1px]  focus:outline-none "
               />
-              <select className="w-full px-4 py-2 mb-4 bg-white border-b-[1px]  focus:outline-none ">
-                <option value="cash">Cash</option>
-              </select>
               <div className="flex justify-end">
                 <button
                   type="button"

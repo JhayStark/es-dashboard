@@ -1,6 +1,7 @@
 import Modal from "@/components/Modal";
 import { useState } from "react";
 import { LuMoreVertical } from "react-icons/lu";
+import { AiOutlineSearch, AiOutlineDownload } from "react-icons/ai";
 
 const UserDetails = () => {
   const [tab, setTab] = useState("insyt");
@@ -137,13 +138,26 @@ const UserDetails = () => {
         </div>
       </div>
       <div className="w-full bg-white rounded-lg shadow-3xl mt-14 h-[30rem]">
-        <p
-          className={` font-medium text-3xl p-4 pb-4 border-b-[1px] pl-8 ${
-            tab === "insyt" ? "text-[#2E64C9]" : "text-[#F24E1E]"
-          }`}
-        >
-          {tab === "insyt" ? "Insyt Forms" : "Push Messages"}
-        </p>
+        <div className="flex flex-row items-center justify-between border-b-[1px] px-5">
+          <p
+            className={` font-medium text-3xl p-4 pb-4  ${
+              tab === "insyt" ? "text-[#2E64C9]" : "text-[#F24E1E]"
+            }`}
+          >
+            {tab === "insyt" ? "Insyt Forms" : "Push Messages"}
+          </p>
+          <div className="flex flex-row items-center justify-between gap-3">
+            <div className="flex flex-row items-center border-[1px] rounded-md p-2">
+              <AiOutlineSearch className="text-slate-500" />
+              <input
+                type="text"
+                className="px-2 focus:outline-none "
+                placeholder="Seacrh"
+              />
+            </div>
+            <AiOutlineDownload className="text-2xl cursor-pointer" />
+          </div>
+        </div>
         <div className="px-4">
           <div className="grid grid-cols-5 gap-10 py-4">
             <p className="pl-5 text-lg font-medium text-left">Date Created</p>

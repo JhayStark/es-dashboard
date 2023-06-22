@@ -1,6 +1,7 @@
 import { RiVoiceprintLine } from "react-icons/ri";
 import { TbMessageDots } from "react-icons/tb";
 import { CgNotes } from "react-icons/cg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -110,6 +111,11 @@ export default function Home() {
               <p className="text-lg text-center">Push</p>
             </div>
           </div>
+          <Link href="/reports">
+            <p className="text-xl pb-2 font-medium text-center cursor-pointer text-[#055189] hover:underline">
+              View all payments
+            </p>
+          </Link>
         </div>
       </div>
     </>

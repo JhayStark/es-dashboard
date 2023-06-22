@@ -43,7 +43,7 @@ const AdminModal = ({ modalState, close }) => {
                   </select>
                 </div>
                 <div className="flex flex-col w-full gap-2">
-                  <p>Role:</p>
+                  <p>Department:</p>
                   <select
                     type="text"
                     className="border-[1px] bg-white py-3 px-5 rounded focus:outline-none"
@@ -51,6 +51,20 @@ const AdminModal = ({ modalState, close }) => {
                   >
                     <option value="1">Tech</option>
                   </select>
+                </div>
+                <div className="flex flex-col w-full gap-2">
+                  <p>Password:</p>
+                  <div className="flex flex-col w-full gap-2">
+                    <input
+                      type="text"
+                      className="border-[1px] bg-white py-3 px-5 rounded focus:outline-none"
+                      placeholder="password"
+                    />
+                    <div className="flex flex-row items-center gap-2">
+                      <input type="checkbox" name="" id="" className="" />
+                      <p className="text-sm">Auto Generate Password</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="flex justify-end">

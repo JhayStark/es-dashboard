@@ -1,5 +1,9 @@
 import { FaUsers, FaUserSlash } from "react-icons/fa";
-import { AiOutlineCheckCircle, AiOutlineEye } from "react-icons/ai";
+import {
+  AiOutlineCheckCircle,
+  AiOutlineEye,
+  AiOutlineSearch,
+} from "react-icons/ai";
 import { useRouter } from "next/router";
 import PieChartComponent from "@/components/PieChart";
 
@@ -75,9 +79,17 @@ const Clients = () => {
         </div>
         <div className="col-span-2 min-h-[38rem] ">
           <div className="h-full p-4 bg-white rounded-lg shadow-3xl ">
-            <p className="py-3 border-b-[1px] text-xl font-medium pl-5">
-              User List
-            </p>
+            <div className="flex items-center justify-between py-3 border-b-[1px]">
+              <p className="pl-5 text-xl font-medium ">User List</p>
+              <div className="flex flex-row items-center border-[1px] rounded-md p-2">
+                <AiOutlineSearch className="text-slate-500" />
+                <input
+                  type="text"
+                  className="px-2 focus:outline-none "
+                  placeholder="Seacrh"
+                />
+              </div>
+            </div>
             <div>
               <div className="grid grid-cols-5 gap-2 py-4 ">
                 <p className="pl-5 text-lg font-medium text-left ">

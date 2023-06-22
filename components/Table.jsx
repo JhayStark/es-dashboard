@@ -1,9 +1,23 @@
 import React from "react";
+import { AiOutlineSearch, AiOutlineDownload } from "react-icons/ai";
 
 const Table = ({ title }) => {
   return (
     <>
-      <p className="py-3 border-b-[1px] mb-6 font-semibold text-lg">{title}</p>
+      <div className="flex flex-row items-center justify-between border-b-[1px]">
+        <p className="py-3 mb-6 text-lg font-semibold">{title}</p>
+        <div className="flex flex-row items-center justify-between gap-3">
+          <div className="flex flex-row items-center border-[1px] rounded-md p-2">
+            <AiOutlineSearch className="text-slate-500" />
+            <input
+              type="text"
+              className="px-2 focus:outline-none "
+              placeholder="Search"
+            />
+          </div>
+          <AiOutlineDownload className="relative text-2xl cursor-pointer" />
+        </div>
+      </div>
       <div className="grid grid-cols-6 mb-2 gap-7">
         <p className="text-lg font-medium text-center ">Transaction ID</p>
         <p className="text-lg font-medium text-center "> Client Name</p>
