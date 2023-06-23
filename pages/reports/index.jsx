@@ -42,7 +42,7 @@ const Index = () => {
       </div>
       <div className="grid grid-cols-4 gap-3 3xl:gap-5 mb-9">
         <StatsTabOption1
-          title="Total Users"
+          title="Profiled Farmers"
           icon={<IoIosPeople />}
           iconColor={"text-[#0FA958]"}
           value={955456}

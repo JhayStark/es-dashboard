@@ -11,11 +11,25 @@ const Table = ({ title }) => {
             <AiOutlineSearch className="text-slate-500" />
             <input
               type="text"
-              className="px-2 focus:outline-none "
+              className="px-2 focus:outline-none"
               placeholder="Search"
             />
           </div>
-          <AiOutlineDownload className="relative text-2xl cursor-pointer" />
+          <div className="relative">
+            <AiOutlineDownload className="text-2xl cursor-pointer " />
+            {false && (
+              <div className="absolute p-5 mt-2 rounded-lg bg-slate-100 shadow-3xl right-1">
+                <div className="flex flex-row items-center border-[1px] rounded-md p-2">
+                  <AiOutlineSearch className="text-slate-500" />
+                  <input
+                    type="text"
+                    className="px-2 focus:outline-none bg-inherit"
+                    placeholder="Enter Client Name"
+                  />
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div className="grid grid-cols-6 mb-2 gap-7">

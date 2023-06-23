@@ -110,12 +110,12 @@ export default function Home() {
               <p className="text-lg text-center">GHC 5000</p>
               <p className="text-lg text-center">Push</p>
             </div>
+            <Link href="/reports">
+              <p className="text-xl py-6  font-medium text-center cursor-pointer text-[#055189] hover:underline">
+                View all payments
+              </p>
+            </Link>
           </div>
-          <Link href="/reports">
-            <p className="text-xl pb-2 font-medium text-center cursor-pointer text-[#055189] hover:underline">
-              View all payments
-            </p>
-          </Link>
         </div>
       </div>
     </>

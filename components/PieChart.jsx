@@ -9,7 +9,7 @@ const data01 = [
 const PieComponent = () => {
   return (
     <ResponsiveContainer width="100%" height="70%" className="py-2 ">
-      <PieChart width={400} height={400} style={{ position: "static" }}>
+      <PieChart width={400} height={400}>
         <Pie
           dataKey="value"
           isAnimationActive={false}
@@ -24,7 +24,6 @@ const PieComponent = () => {
           ))}
           paddingAngle={5}
           label={({ name }) => name}
-          style={{ position: "static" }}
         />
         <Tooltip />
       </PieChart>

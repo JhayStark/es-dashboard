@@ -45,7 +45,6 @@ const AreaGraph = () => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart
-        style={{ position: "static" }}
         width={500}
         height={400}
         data={data}
